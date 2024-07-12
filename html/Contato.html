@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Ok School</title>
+</head>
+<body>
+
+    <header>
+        <div class="teste">
+            <div>
+                <img src="Group 2.png" alt="">
+
+            </div>
+            <div>
+                <h1>OkSchool</h1>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="botao"> <a href=""> Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li> <a href="Contato.html">Contato</a> </li>
+                <li> <a href="atividade.html">Atividade</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="forms">
+            <h2>Contato</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu email" autocomplete="off">
+                <label>Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                <button type="submit"><a href="obrigado.html">Enviar</a></button>
+    
+                <input type="hidden" name="accessKey" value="9075c62c-02cb-4b83-9417-ec8a22dbf3fb">
+                <!--
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+                -->
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>

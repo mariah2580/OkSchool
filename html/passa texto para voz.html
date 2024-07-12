@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="signin.css">
+<title>Acessibilidade de Fala</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 10px;
+    }
+</style>
+</head>
+<body>
+    <h1>Acessibilidade de Fala</h1>
+    <div>
+        <p>A Ok School adota um amplo conceito de diversidade humana para pensar a educação inclusiva. Nosso foco tem sido as pessoas com deficiência, tendo em vista que foram historicamente privadas da participação nas redes de ensino. Acreditamos que o apoio ao atendimento desses estudantes na escola inclusiva colabora para que a consciência sobre o anacronismo do modelo educacional predominante venha à tona e deixe de ser disfarçada ou adiada.        </p>
+        <p>Clique no botão abaixo para ouvir o texto.</p>
+        <button onclick="speakText()">Ouvir texto</button>
+    </div>
+
+    <script>
+        function speakText() {
+            // Texto que será falado
+            var textoParaFalar = "A Ok School adota um amplo conceito de diversidade humana para pensar a educação inclusiva. Nosso foco tem sido as pessoas com deficiência, tendo em vista que foram historicamente privadas da participação nas redes de ensino. Acreditamos que o apoio ao atendimento desses estudantes na escola inclusiva colabora para que a consciência sobre o anacronismo do modelo educacional predominante venha à tona e deixe de ser disfarçada ou adiada.";
+
+            // Criação de um objeto SpeechSynthesisUtterance
+            var mensagem = new SpeechSynthesisUtterance(textoParaFalar);
+
+            // Voz e idioma (opcional)
+            mensagem.lang = 'pt-BR'; // Define o idioma para português do Brasil
+
+            // Fala o texto
+            window.speechSynthesis.speak(mensagem);
+        }
+    </script>
+</body>
+</html>
