@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="planos.css" />
+  <title>Carrossel</title>
+</head>
+
+<body>
+  <div class="container">
+    <a class="prev" href="#" onclick="addSlides(-1)">
+      <span>&#10094;</span>
+      <span class="prev-text">Voltar</span>
+    </a>
+    <div>
+      <div class="slides fade">
+        <img src="assets/claro.png" />
+        <h2 class="title">Plano Básico - Inclusão Essencial</h2>
+        <p class="content">Um plano introdutório para escolas e educadores que desejam iniciar práticas de inclusão, mas
+          com recursos limitados.</p>
+      </div>
+      <div class="slides fade">
+        <img src="assets/claro.png" />
+        <h2 class="title">Plano Intermediário - Inclusão Avançada</h2>
+        <p class="content">Um plano mais completo que inclui suporte contínuo e treinamento personalizado para uma
+          implementação mais robusta de práticas inclusivas.</p>
+      </div>
+      <div class="slides fade">
+        <img src="assets/claro.png" />
+        <h2 class="title">Plano Avançado - Inclusão Total</h2>
+        <p class="content">Um plano premium que oferece uma solução completa e integrada para transformar a escola em um
+          ambiente inclusivo, com acompanhamento contínuo e consultoria personalizada.<br /><br />
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <button class="button" onclick="addSlides(1)">Próximo</button>
+      <div class="dot-box">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </div>
+  
+  <script src="planos.js"></script>
+</body>
+
+</html>
