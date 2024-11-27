@@ -1,0 +1,390 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Estilos do cabeçalho */
+/* popup */
+/* Popup estilos */
+.popup-container {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.fechar-popup {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.fechar-popup:hover {
+  color: #ff0000;
+}
+
+.faq-content h3 {
+  color: #ffcc00;
+  margin-top: 20px;
+}
+
+.faq-content ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.faq-content p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+
+
+
+/* popup */
+header {
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.header-title {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header-title h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+.divider-line {
+    width: 100%;
+    height: 2px;
+    background-color: #454545;
+    margin: 10px 0 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-size: 14px;
+    position: relative;
+    padding: 5px 0;
+}
+
+.menu a:hover {
+    color: #666;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+}
+
+/* Cores das bolinhas em cada página */
+.menu a.home::after { background-color: yellow; }
+.menu a.sobre-nos::after { background-color: green; }
+.menu a.contato::after { background-color: orange; }
+.menu a.configuracoes::after { background-color: gray; }
+.menu a.ajuda::after { background-color: blue; }
+.menu a.atividades::after { background-color: pink; }
+.menu a.noticias::after { background-color: cyan; }
+.menu a.estudo-de-caso::after { background-color: red; }
+.menu a.planos::after { background-color: purple; }
+
+.submenu {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu-conteudo {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 150px;
+}
+
+.submenu-conteudo a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+}
+
+.submenu-conteudo a:hover {
+    background-color: #f1f1f1;
+}
+
+.submenu:hover .submenu-conteudo {
+    display: block;
+}
+  /**/ 
+
+
+
+
+#textinho{
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+ }
+
+ #textinho p{
+    margin-bottom: 7px;
+ }
+
+  .planos {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  
+  .planos::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 3px solid #ffcc00;
+    border-radius: 12px;
+    z-index: -1;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffcc00;
+  }
+  
+  .tabela-planos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .tabela-planos th,
+  .tabela-planos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .tabela-planos th {
+    background-color: #ffcc00;
+    color: white;
+  }
+  
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #ffcc00;
+  }
+
+
+
+
+
+
+
+  .recursos-adicionais h2,
+.escolha-planos h2 {
+  text-align: center;
+  color: #f5a623; /* Amarelo */
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estilo para os containers */
+.recursos-adicionais,
+.escolha-planos {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para as listas */
+.recursos-adicionais ul,
+.escolha-planos ul {
+  list-style-type: none;
+  padding: 0 20px;
+  margin: 0;
+  line-height: 1.8;
+  border: 1px solid #ddd; /* Borda ao redor da lista */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Itens da lista com linhas separadoras */
+.recursos-adicionais ul li,
+.escolha-planos ul li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd; /* Linha separadora */
+}
+
+.recursos-adicionais ul li:last-child,
+.escolha-planos ul li:last-child {
+  border-bottom: none; /* Remove linha do último item */
+}
+
+  
+  /* Estilo para os textos coloridos */
+  .azul {
+    color: #12B2F6;
+    font-weight: bold;
+  }
+  
+  .vermelho {
+    color: #F20A0A;
+    font-weight: bold;
+  }
+  
+  
+  .roxo {
+    color: #9B1692;
+    font-weight: bold;
+  }
+
+
+
+
+  /* Rodape */
+footer {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+footer .footer-decorator {
+    height: 30px;
+    background: url('bubbles-footer.png') no-repeat center top;
+    background-size: cover;
+}
+
+footer .container2 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #ff5722;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-info {
+    margin-top: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
